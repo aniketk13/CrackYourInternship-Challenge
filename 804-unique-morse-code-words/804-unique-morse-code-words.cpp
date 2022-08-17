@@ -11,7 +11,6 @@ public:
                 code+=codes[j-'a'];
             }
             ans.insert(code);
-            cout<<code;
         }
         return ans.size();
         
