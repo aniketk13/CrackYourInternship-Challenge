@@ -5,9 +5,9 @@ public:
         vector<string> codes={".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
         
         unordered_set<string> ans;
-        for(string i:words){
+        for(auto i:words){
             string code="";
-            for(char j:i){
+            for(auto j:i){
                 code+=codes[j-'a'];
             }
             ans.insert(code);
